@@ -7,57 +7,102 @@
   padding: 2rem;
 }
 
-.gameContent {
+.gameContent, .detailContent {
   background: rgba(255, 255, 255, 0.95);
-  padding: 3rem 2rem;
-  border-radius: 40px;
-  box-shadow: 0 0 50px rgba(255, 105, 180, 0.5);
+  padding: 3rem;
+  border-radius: 50px;
+  box-shadow: 0 0 60px rgba(255, 105, 180, 0.5);
   text-align: center;
   max-width: 95%;
 }
 
-.gameContent h1 {
-  font-size: 2.8rem;
+.gameContent h1, .detailContent h1 {
+  font-size: 4rem;
   color: #ff69b4;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.gameContent p {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 3rem;
-}
-
+/* Grille lettres */
 .alphabetGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .lettreBtn {
   width: 100%;
   aspect-ratio: 1;
-  font-size: 3.5rem;
+  font-size: 4rem;
   background: linear-gradient(to bottom, #ffd1dc, #ff9a9e);
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
 }
 
 .lettreBtn:hover {
   transform: scale(1.15);
 }
 
+/* Page détail */
+.lettreTitle {
+  font-size: 6rem !important;
+  color: #ff69b4;
+  margin-bottom: 1rem;
+}
+
+.motTitle {
+  font-size: 4rem;
+  color: #333;
+  margin: 2rem 0;
+}
+
+.exempleImage {
+  max-width: 80%;
+  max-height: 50vh;
+  border-radius: 40px;
+  box-shadow: 0 0 40px rgba(255, 105, 180, 0.8);
+  margin: 2rem 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.navBtn {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.counter {
+  font-size: 2rem;
+  color: #333;
+}
+
+.noExemple {
+  font-size: 2.5rem;
+  color: #ff69b4;
+  margin: 3rem 0;
+}
+
 .backBtn {
   margin-top: 3rem;
-  padding: 1rem 2.5rem;
+  padding: 1.2rem 3rem;
   background: #ddd;
   color: #333;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-size: 1.6rem;
   cursor: pointer;
 }
@@ -66,9 +111,14 @@
 @media (max-width: 768px) {
   .alphabetGrid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
   }
   .lettreBtn {
+    font-size: 3.5rem;
+  }
+  .lettreTitle {
+    font-size: 5rem !important;
+  }
+  .motTitle {
     font-size: 3rem;
   }
 }

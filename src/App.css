@@ -57,38 +57,6 @@ body {
   margin-bottom: 3rem;
 }
 
-.menu-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.menu-btn {
-  padding: 1.8rem;
-  font-size: 2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
-}
-
-.menu-btn:hover {
-  transform: scale(1.1);
-}
-
-.alphabet-btn {
-  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
-}
-
-.comptage-btn {
-  background: linear-gradient(to bottom, #a8edea, #fed6e3);
-}
-
-.difference-btn {
-  background: linear-gradient(to bottom, #ffb6c1, #98fb98);
-}
 
 /* ============================= */
 /* JEUX GÉNÉRAUX */
