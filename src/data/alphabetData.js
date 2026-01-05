@@ -13,10 +13,11 @@ const alphabetData = {
   ],
 
   C: [
-    { mot: "Chat", image: "/images/chat.jpg" },
-    { mot: "Chien", image: "/images/chien.jpg" },
-    { mot: "Camion", image: "/images/camion.jpg" },
-    { mot: "Château", image: "/images/chateau.jpg" },
+    { mot: "Chat", image: "/images/chat.avif" },
+    { mot: "Chien", image: "/images/chien.avif" },
+    { mot: "Camion", image: "/images/camion.avif" },
+
+    { mot: "Château", image: "/images/chateau.avif" },
   ],
 
   D: [
@@ -26,8 +27,8 @@ const alphabetData = {
   ],
 
   E: [
-    { mot: "Éléphant", image: "/images/elephant.jpg" },
-    { mot: "Étoile", image: "/images/etoile.jpg" },
+    { mot: "Éléphant", image: "/images/elephant.avif" },
+    { mot: "Étoile", image: "/images/etoile.avif" },
     { mot: "École", image: "/images/ecole.jpg" },
   ],
 
@@ -56,20 +57,22 @@ const alphabetData = {
   ],
 
   J: [
-    { mot: "Jouet", image: "/images/jouet.jpg" },
-    { mot: "Jardin", image: "/images/jardin.jpg" },
-    { mot: "Jus", image: "/images/jus.jpg" },
+    
+    { mot: "Jupe", image: "/images/jupe.avif" },
+    { mot: "Jaguar", image: "/images/jaguar.avif" },
+    { mot: "Jambon", image: "/images/jambon.jpg" },
   ],
 
   K: [
-    { mot: "Kangourou", image: "/images/kangourou.jpg" },
-    { mot: "Koala", image: "/images/koala.jpg" },
+    { mot: "Kangourou", image: "/images/kangourou.avif" },
+    { mot: "Koala", image: "/images/koala.avif" },
   ],
 
   L: [
-    { mot: "Lune", image: "/images/lune.jpg" },
-    { mot: "Lion", image: "/images/lion.jpg" },
-    { mot: "Livre", image: "/images/livre.jpg" },
+    { mot: "Lune", image: "/images/lune.avif" },
+    { mot: "Lilwenn", image: "/images/lilwenn.jpg" },
+    { mot: "Lion", image: "/images/lion.avif" },
+    { mot: "Livre", image: "/images/livre.avif" },
   ],
 
   M: [
@@ -79,15 +82,15 @@ const alphabetData = {
   ],
 
   N: [
-    { mot: "Nuage", image: "/images/nuage.jpg" },
-    { mot: "Neige", image: "/images/neige.jpg" },
-    { mot: "Nez", image: "/images/nez.jpg" },
+    { mot: "Nuage", image: "/images/nuage.avif" },
+    { mot: "Neige", image: "/images/neige.avif" },
+    { mot: "Nez", image: "/images/nez.avif" },
   ],
 
   O: [
-    { mot: "Ours", image: "/images/ours.jpg" },
-    { mot: "Oiseau", image: "/images/oiseau.jpg" },
-    { mot: "Orange", image: "/images/orange.jpg" },
+    { mot: "Ours", image: "/images/ours.avif" },
+    { mot: "Oiseau", image: "/images/oiseau.avif" },
+    { mot: "Orange", image: "/images/orange.avif" },
   ],
 
   P: [
@@ -102,9 +105,9 @@ const alphabetData = {
   ],
 
   R: [
-    { mot: "Robot", image: "/images/robot.jpg" },
-    { mot: "Renard", image: "/images/renard.jpg" },
-    { mot: "Roi", image: "/images/roi.jpg" },
+    { mot: "Robot", image: "/images/robot.avif" },
+    { mot: "Renard", image: "/images/renard.avif" },
+    { mot: "Robe", image: "/images/robe.avif" },
   ],
 
   S: [
@@ -125,13 +128,16 @@ const alphabetData = {
   ],
 
   V: [
-    { mot: "Vache", image: "/images/vache.jpg" },
-    { mot: "Vélo", image: "/images/velo.jpg" },
-    { mot: "Volcan", image: "/images/volcan.jpg" },
+    { mot: "Vache", image: "/images/vache.avif" },
+    { mot: "Vélo", image: "/images/velo.avif" },
+    { mot: "Volcan", image: "/images/volcan.avif" },
+    { mot: "Voiture", image: "/images/voiture.avif" },
   ],
 
   W: [
     { mot: "Wagon", image: "/images/wagon.jpg" },
+    { mot: "Wapiti", image: "/images/wapiti.jpg"},
+    
   ],
 
   X: [
@@ -139,8 +145,9 @@ const alphabetData = {
   ],
 
   Y: [
-    { mot: "Yo-yo", image: "/images/yoyo.jpg" },
-    { mot: "Yacht", image: "/images/yacht.jpg" },
+    { mot: "Yo-yo", image: "/images/yoyo.svg" },
+    { mot: "Yaourt", image: "/images/yaourt.jpg" },
+
   ],
 
   Z: [
