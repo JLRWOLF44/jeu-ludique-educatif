@@ -111,9 +111,9 @@ const alphabetData = {
   ],
 
   S: [
-    { mot: "Soleil", image: "/images/soleil.jpg" },
-    { mot: "Souris", image: "/images/souris.jpg" },
-    { mot: "Sac", image: "/images/sac.jpg" },
+    { mot: "Soleil", image: "/images/soleil.avif" },
+    { mot: "Souris", image: "/images/souris.avif" },
+    { mot: "Sac", image: "/images/sac.avif" },
   ],
 
   T: [
@@ -123,8 +123,8 @@ const alphabetData = {
   ],
 
   U: [
-    { mot: "Usine", image: "/images/usine.jpg" },
-    { mot: "Uniforme", image: "/images/uniforme.jpg" },
+    { mot: "Usine", image: "/images/usine.avif" },
+    { mot: "Uniforme", image: "/images/uniforme.avif" },
   ],
 
   V: [
@@ -135,8 +135,8 @@ const alphabetData = {
   ],
 
   W: [
-    { mot: "Wagon", image: "/images/wagon.jpg" },
-    { mot: "Wapiti", image: "/images/wapiti.jpg"},
+    { mot: "Wagon", image: "/images/wagon.avif" },
+    
     
   ],
 
@@ -151,9 +151,9 @@ const alphabetData = {
   ],
 
   Z: [
-    { mot: "Zèbre", image: "/images/zebre.jpg" },
-    { mot: "Zoo", image: "/images/zoo.jpg" },
-    { mot: "Zéro", image: "/images/zero.jpg" },
+    { mot: "Zèbre", image: "/images/zebre.avif" },
+    { mot: "Zoo", image: "/images/zoo.avif" },
+    { mot: "Zéro", image: "/images/zero.avif" },
   ],
 };
 

@@ -157,4 +157,25 @@
     font-size: 1.7rem;
     padding: 1.4rem;
   }
+  /* Grand écran : plus aéré et impressionnant */
+@media (min-width: 1024px) {
+  .homeContent {
+    padding: 5rem 4rem;
+    max-width: 80%;
+    border-radius: 60px;
+  }
+
+  .homeContent h1 {
+    font-size: 4.5rem;
+  }
+
+  .homeContent p {
+    font-size: 2.2rem;
+  }
+
+  .menuBtn {
+    padding: 2.5rem;
+    font-size: 2.8rem;
+  }
+}
 }
