@@ -61,18 +61,20 @@
 
 /* Boutons menu généraux */
 .menuBtn {
-  padding: 2rem;
-  font-size: 2.2rem;
+  padding: 2.2rem 1.5rem;
+  font-size: 2.1rem;
   font-weight: bold;
-  border: 6px solid #ffd700;
-  border-radius: 50px;
+  border: 6px solid white;               /* Bordure blanche épaisse */
+  border-radius: 50px;                   /* Super arrondi */
   cursor: pointer;
   box-shadow: 
     0 10px 30px rgba(0,0,0,0.3),
-    0 0 30px rgba(255, 215, 0, 0.4);
+    0 0 30px rgba(255, 255, 255, 0.6);   /* Glow doux */
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+  color: #ff69b4;
 }
 
 /* Effet brillance au hover */
@@ -92,30 +94,24 @@
 }
 
 .menuBtn:hover {
-  transform: scale(1.1) translateY(-8px);
+  transform: translateY(-10px) scale(1.08);
   box-shadow: 
-    0 15px 40px rgba(0,0,0,0.4),
-    0 0 40px rgba(255, 215, 0, 0.8); /* Glow plus fort au hover */
-  border-color: #ff69b4; /* Bordure rose au hover pour plus de magie */
+    0 20px 40px rgba(0,0,0,0.4),
+    0 0 50px rgba(255, 105, 180, 0.8);
+  border-color: #ff69b4;
 }
 
 /* Couleurs spécifiques par bouton */
 .alphabetBtn {
   background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
-  border-color : #ff69b4;
 }
 
 .comptageBtn {
   background: linear-gradient(to bottom, #a8edea, #fed6e3);
-  border-color : #40e0d0;
 }
 
 .differenceBtn {
   background: linear-gradient(to bottom, #ffb6c1, #98fb98);
-    border-color : #98fb98;
-}
-.menuBtn:hover {
-  border-color: #ffd700 !important; /* Doré au hover pour tous */
 }
 
 /* Petite signature en bas (optionnel) */
@@ -157,25 +153,23 @@
     font-size: 1.7rem;
     padding: 1.4rem;
   }
-  /* Grand écran : plus aéré et impressionnant */
-@media (min-width: 1024px) {
-  .homeContent {
-    padding: 5rem 4rem;
-    max-width: 80%;
-    border-radius: 60px;
-  }
-
-  .homeContent h1 {
-    font-size: 4.5rem;
-  }
-
-  .homeContent p {
-    font-size: 2.2rem;
-  }
-
-  .menuBtn {
-    padding: 2.5rem;
-    font-size: 2.8rem;
-  }
 }
+/* Icônes plus grosses */
+.menuBtn .icon {
+  font-size: 2.8rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+/* Couleurs spécifiques si tu veux garder les dégradés */
+.alphabetBtn {
+  color: #ff69b4;
+}
+
+.comptageBtn {
+  color: #00bcd4;
+}
+
+.differenceBtn {
+  color: #98fb98;
 }

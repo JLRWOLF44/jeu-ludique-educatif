@@ -1,0 +1,130 @@
+.container {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.image {
+  max-width: 300px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.slots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.slot {
+  width: 60px;
+  height: 60px;
+  border: 3px dashed #ff69b4;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff69b4;
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.letterTile {
+  width: 55px;
+  height: 55px;
+  background: #ffd1dc;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  cursor: grab;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.success {
+  font-size: 1.6rem;
+  color: #ff69b4;
+  margin-top: 1rem;
+}
+
+/* 🎊 CONFETTIS */
+.confettiContainer {
+  position: fixed;                 /* ⭐ CONFETTI NOUVEAU */
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.confetti {
+  position: absolute;
+  top: -10px;
+  width: 12px;
+  height: 12px;
+  background-color: hsl(
+    calc(360 * var(--rand)),
+    80%,
+    70%
+  );
+  animation: fall 2.5s linear forwards; /* ⭐ CONFETTI NOUVEAU */
+}
+
+.confetti:nth-child(odd) {
+  background-color: #ff69b4;
+}
+
+.confetti:nth-child(even) {
+  background-color: #ffd700;
+}
+
+.lettres {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.lettre {
+  width: 60px;
+  height: 60px;
+  background: #ffd1dc;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: grab;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}

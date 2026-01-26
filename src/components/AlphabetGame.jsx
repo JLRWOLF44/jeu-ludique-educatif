@@ -1,41 +1,44 @@
 import React, { useState } from "react";
 import alphabetData from "../data/alphabetData";
+import WordDragGame from "./WordDragGame";
 import styles from "./AlphabetGame.module.css";
 
 function AlphabetGame({ onBack }) {
   const lettres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-  const [selectedLettre, setSelectedLettre] = useState(null); // null = grille
-  const [currentExempleIndex, setCurrentExempleIndex] = useState(0);
+  const [selectedLettre, setSelectedLettre] = useState(null);
+  const [indexMot, setIndexMot] = useState(0);
 
-  const handleSelectLettre = (lettre) => {
-    setSelectedLettre(lettre);
-    setCurrentExempleIndex(0);
+  const mots = selectedLettre ? alphabetData[selectedLettre] || [] : [];
+
+  const motActuel = mots[indexMot];
+
+  const nextMot = () => {
+    setIndexMot((prev) => (prev + 1) % mots.length);
   };
 
-  const exemples = selectedLettre ? alphabetData[selectedLettre] || [] : [];
-
-  const handlePrev = () => {
-    setCurrentExempleIndex((prev) => (prev - 1 + exemples.length) % exemples.length);
+  const prevMot = () => {
+    setIndexMot((prev) => (prev - 1 + mots.length) % mots.length);
   };
 
-  const handleNext = () => {
-    setCurrentExempleIndex((prev) => (prev + 1) % exemples.length);
-  };
-
-  // Grille des lettres
+  /* =====================
+     ÉCRAN ALPHABET
+     ===================== */
   if (!selectedLettre) {
     return (
       <div className={styles.gameScreen}>
         <div className={styles.gameContent}>
           <h1>🌟 L'Alphabet Enchanté 🌟</h1>
-          <p>Clique sur une lettre pour découvrir des mots magiques !</p>
+          <p>Clique sur une lettre pour découvrir des mots</p>
 
           <div className={styles.alphabetGrid}>
             {lettres.map((lettre) => (
               <button
                 key={lettre}
                 className={styles.lettreBtn}
-                onClick={() => handleSelectLettre(lettre)}
+                onClick={() => {
+                  setSelectedLettre(lettre);
+                  setIndexMot(0);
+                }}
               >
                 {lettre}
               </button>
@@ -43,45 +46,58 @@ function AlphabetGame({ onBack }) {
           </div>
 
           <button className={styles.backBtn} onClick={onBack}>
-            ← Retour au jardin
+            ← Retour
           </button>
         </div>
       </div>
     );
   }
 
-  // Page détail d'une lettre
-  const exemple = exemples[currentExempleIndex];
-
+  /* =====================
+     ÉCRAN MOT
+     ===================== */
   return (
     <div className={styles.gameScreen}>
       <div className={styles.detailContent}>
         <h1 className={styles.lettreTitle}>{selectedLettre}</h1>
 
-        {exemple ? (
+        {motActuel && (
           <>
-            <h2 className={styles.motTitle}>{exemple.mot}</h2>
-            <img src={exemple.image} alt={exemple.mot} className={styles.exempleImage} />
+            <h2 className={styles.motTitle}>{motActuel.mot}</h2>
 
-            {exemples.length > 1 && (
+            {/* ✅ UNE SEULE IMAGE */}
+            <img
+              src={motActuel.image}
+              alt={motActuel.mot}
+              className={styles.exempleImage}
+            />
+            <h2 className={styles.motTitle}>{motActuel.mot}</h2>
+
+             {/* ✅ NAVIGATION */}
+            {mots.length > 1 && (
               <div className={styles.navigation}>
-                <button className={styles.navBtn} onClick={handlePrev}>
-                  ← Précédent
-                </button>
-                <span className={styles.counter}>
-                  {currentExempleIndex + 1} / {exemples.length}
+                <button onClick={prevMot}>⬅</button>
+                <span>
+                  {indexMot + 1} / {mots.length}
                 </span>
-                <button className={styles.navBtn} onClick={handleNext}>
-                  Suivant →
-                </button>
+                <button onClick={nextMot}>➡</button>
               </div>
             )}
+
+            {/* ✅ JEU DE LETTRES */}
+            <WordDragGame
+              key={motActuel.mot}   // 🔥 reset obligatoire
+              mot={motActuel.mot}
+            />
+
+           
           </>
-        ) : (
-          <p className={styles.noExemple}>Pas d'exemple pour cette lettre encore !</p>
         )}
 
-        <button className={styles.backBtn} onClick={() => setSelectedLettre(null)}>
+        <button
+          className={styles.backBtn}
+          onClick={() => setSelectedLettre(null)}
+        >
           ← Retour aux lettres
         </button>
       </div>

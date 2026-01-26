@@ -1,159 +1,151 @@
 const alphabetData = {
   A: [
-    { mot: "Abeille", image: "/images/abeille.jpg" },
-    { mot: "Avion", image: "/images/avion.avif" },
-    { mot: "Arbre", image: "/images/arbre.avif" },
+    { mot: "ABEILLE", image: "/images/abeille.jpg" },
+    { mot: "ANANAS", image: "/images/ananas.avif" },
+    { mot: "ALWENNA", image: "/images/alwenna.jpg" },
+    { mot: "AVION", image: "/images/avion.avif" },
+    { mot: "ARBRE", image: "/images/arbre.avif" },
   ],
-
   B: [
-    { mot: "Ballon", image: "/images/ballon.avif" },
-    { mot: "Bateau", image: "/images/bateau.jpg" },
-    { mot: "Biscuit", image: "/images/biscuit.jpg" },
-    { mot: "Baleine", image: "/images/baleine.jpg" },
+    { mot: "BALLON", image: "/images/ballon.avif" },
+    { mot: "BATEAU", image: "/images/bateau.jpg" },
+    { mot: "BEBÉ", image: "/images/bebe.jpg" },
+    { mot: "BISCUIT", image: "/images/biscuit.jpg" },
+    { mot: "BALEINE", image: "/images/baleine.jpg" },
+    { mot: "BOUCHE", image: "/images/bouche.jpg" },
+    { mot: "BOUTEILLE", image: "/images/bouteille.jpg" },
   ],
-
   C: [
-    { mot: "Chat", image: "/images/chat.avif" },
-    { mot: "Chien", image: "/images/chien.avif" },
-    { mot: "Camion", image: "/images/camion.avif" },
-
-    { mot: "Château", image: "/images/chateau.avif" },
+    { mot: "CHAT", image: "/images/chat.avif" },
+    { mot: "CHIEN", image: "/images/chien.avif" },
+    { mot: "CAMION", image: "/images/camion.avif" },
+    { mot: "CHÂTEAU", image: "/images/chateau.avif" },
+    { mot: "CERISE", image: "/images/cerise.avif" },
+    { mot: "COCCINELLE", image: "/images/coccinelle.avif" },
   ],
-
   D: [
-    { mot: "Doudou", image: "/images/doudou.jpg" },
-    { mot: "Dragon", image: "/images/dragon.jpg" },
-    { mot: "Dessin", image: "/images/dessin.jpg" },
+    { mot: "DOUDOU", image: "/images/doudou.jpg" },
+    { mot: "DRAGON", image: "/images/dragon.jpg" },
+    { mot: "DESSIN", image: "/images/dessin.jpg" },
+    { mot: "DINOSAURE", image: "/images/dinosaure.avif" },
+    { mot: "DENT", image: "/images/dent.avif" },
+    { mot: "DÉ", image: "/images/de.jpg" },
   ],
-
   E: [
-    { mot: "Éléphant", image: "/images/elephant.avif" },
-    { mot: "Étoile", image: "/images/etoile.avif" },
-    { mot: "École", image: "/images/ecole.jpg" },
+    { mot: "ÉLÉPHANT", image: "/images/elephant.avif" },
+    { mot: "ÉTOILE", image: "/images/etoile.avif" },
+    { mot: "ÉCOLE", image: "/images/ecole.jpg" },
   ],
-
   F: [
-    { mot: "Fleur", image: "/images/fleur.jpg" },
-    { mot: "Forêt", image: "/images/foret.jpg" },
-    { mot: "Fusée", image: "/images/fusee.jpg" },
+    { mot: "FLEUR", image: "/images/fleur.jpg" },
+    { mot: "FORÊT", image: "/images/foret.jpg" },
+    { mot: "FUSÉE", image: "/images/fusee.jpg" },
   ],
-
   G: [
-    { mot: "Gâteau", image: "/images/gateau.jpg" },
-    { mot: "Girafe", image: "/images/girafe.jpg" },
-    { mot: "Glace", image: "/images/glace.jpg" },
+    { mot: "GÂTEAU", image: "/images/gateau.avif" },
+    { mot: "GIRAFE", image: "/images/girafe.avif" },
+    { mot: "GLACE", image: "/images/glace.avif" },
+    { mot: "GRENOUILLE", image: "/images/grenouille.avif" },
+    { mot: "GUITARE", image: "/images/guitare.avif" },
   ],
-
   H: [
-    { mot: "Hibou", image: "/images/hibou.jpg" },
-    { mot: "Héros", image: "/images/heros.jpg" },
-    { mot: "Herbe", image: "/images/herbe.jpg" },
+    { mot: "HIBOU", image: "/images/hibou.jpg" },
+    { mot: "HÉROS", image: "/images/heros.jpg" },
+    { mot: "HERBE", image: "/images/herbe.jpg" },
+    { mot: "HÔPITAL", image: "/images/hopital.jpg" },
+    { mot: "HÉLICOPTÈRE", image: "/images/helicoptere.jpg" },
   ],
-
   I: [
-    { mot: "Igloo", image: "/images/igloo.jpg" },
-    { mot: "Île", image: "/images/ile.jpg" },
-    { mot: "Insecte", image: "/images/insecte.jpg" },
+    { mot: "IGLOO", image: "/images/igloo.jpg" },
+    { mot: "ÎLE", image: "/images/ile.jpg" },
+    { mot: "INSECTE", image: "/images/insecte.jpg" },
   ],
-
   J: [
-    
-    { mot: "Jupe", image: "/images/jupe.avif" },
-    { mot: "Jaguar", image: "/images/jaguar.avif" },
-    { mot: "Jambon", image: "/images/jambon.jpg" },
+    { mot: "JUPE", image: "/images/jupe.avif" },
+    { mot: "JAGUAR", image: "/images/jaguar.avif" },
+    { mot: "JAMBON", image: "/images/jambon.jpg" },
   ],
-
   K: [
-    { mot: "Kangourou", image: "/images/kangourou.avif" },
-    { mot: "Koala", image: "/images/koala.avif" },
+    { mot: "KANGOUROU", image: "/images/kangourou.avif" },
+    { mot: "KOALA", image: "/images/koala.avif" },
   ],
-
   L: [
-    { mot: "Lune", image: "/images/lune.avif" },
-    { mot: "Lilwenn", image: "/images/lilwenn.jpg" },
-    { mot: "Lion", image: "/images/lion.avif" },
-    { mot: "Livre", image: "/images/livre.avif" },
+    { mot: "LUNE", image: "/images/lune.avif" },
+    { mot: "LILWENN", image: "/images/lilwenn.jpg" },
+    { mot: "LION", image: "/images/lion.avif" },
+    { mot: "LIVRE", image: "/images/livre.avif" },
   ],
-
   M: [
-    { mot: "Maison", image: "/images/maison.jpg" },
-    { mot: "Maman", image: "/images/maman.jpg" },
-    { mot: "Moto", image: "/images/moto.jpg" },
+    { mot: "MAISON", image: "/images/maison.jpg" },
+    { mot: "MAMAN", image: "/images/maman.jpg" },
+    { mot: "MOTO", image: "/images/moto.jpg" },
   ],
-
   N: [
-    { mot: "Nuage", image: "/images/nuage.avif" },
-    { mot: "Neige", image: "/images/neige.avif" },
-    { mot: "Nez", image: "/images/nez.avif" },
+    { mot: "NUAGE", image: "/images/nuage.avif" },
+    { mot: "NEIGE", image: "/images/neige.avif" },
+    { mot: "NEZ", image: "/images/nez.avif" },
   ],
-
   O: [
-    { mot: "Ours", image: "/images/ours.avif" },
-    { mot: "Oiseau", image: "/images/oiseau.avif" },
-    { mot: "Orange", image: "/images/orange.avif" },
+    { mot: "OURS", image: "/images/ours.avif" },
+    { mot: "OISEAU", image: "/images/oiseau.avif" },
+    { mot: "ORANGE", image: "/images/orange.avif" },
+    { mot: "ŒUF", image: "/images/oeuf.avif" },
   ],
-
   P: [
-    { mot: "Papa", image: "/images/papa.jpg" },
-    { mot: "Poisson", image: "/images/poisson.jpg" },
-    { mot: "Pomme", image: "/images/pomme.jpg" },
+    { mot: "PAPA", image: "/images/papa.jpg" },
+    { mot: "POISSON", image: "/images/poisson.jpg" },
+    { mot: "POMME", image: "/images/pomme.jpg" },
   ],
-
   Q: [
-    { mot: "Queue", image: "/images/queue.jpg" },
-    { mot: "Quille", image: "/images/quille.jpg" },
+    { mot: "QUEUE", image: "/images/queue.jpg" },
+    { mot: "QUILLE", image: "/images/quille.jpg" },
   ],
-
   R: [
-    { mot: "Robot", image: "/images/robot.avif" },
-    { mot: "Renard", image: "/images/renard.avif" },
-    { mot: "Robe", image: "/images/robe.avif" },
+    { mot: "ROBOT", image: "/images/robot.avif" },
+    { mot: "RENARD", image: "/images/renard.avif" },
+    { mot: "ROBE", image: "/images/robe.avif" },
+    { mot: "ROUE", image: "/images/roue.avif" },
+    { mot: "RIVIÈRE", image: "/images/riviere.avif" },
+    { mot: "RAISIN", image: "/images/raisin.avif" },
+    { mot: "RADIO", image: "/images/radio.avif" },
   ],
-
   S: [
-    { mot: "Soleil", image: "/images/soleil.avif" },
-    { mot: "Souris", image: "/images/souris.avif" },
-    { mot: "Sac", image: "/images/sac.avif" },
+    { mot: "SOLEIL", image: "/images/soleil.avif" },
+    { mot: "SOURIS", image: "/images/souris.avif" },
+    { mot: "SAC", image: "/images/sac.avif" },
+    { mot: "SERPENT", image: "/images/serpent.avif" },
+    { mot: "STYLO", image: "/images/stylo.avif" },
+    { mot: "SAVON", image: "/images/savon.avif" },
   ],
-
   T: [
-    { mot: "Train", image: "/images/train.avif" },
-    { mot: "Tortue", image: "/images/tortue.avif" },
-    { mot: "Table", image: "/images/table.jpg" },
+    { mot: "TRAIN", image: "/images/train.avif" },
+    { mot: "TORTUE", image: "/images/tortue.avif" },
+    { mot: "TABLE", image: "/images/table.jpg" },
   ],
-
   U: [
-    { mot: "Usine", image: "/images/usine.avif" },
-    { mot: "Uniforme", image: "/images/uniforme.avif" },
+    { mot: "USINE", image: "/images/usine.avif" },
+    { mot: "UNIFORME", image: "/images/uniforme.avif" },
   ],
-
   V: [
-    { mot: "Vache", image: "/images/vache.avif" },
-    { mot: "Vélo", image: "/images/velo.avif" },
-    { mot: "Volcan", image: "/images/volcan.avif" },
-    { mot: "Voiture", image: "/images/voiture.avif" },
+    { mot: "VACHE", image: "/images/vache.avif" },
+    { mot: "VÉLO", image: "/images/velo.avif" },
+    { mot: "VOLCAN", image: "/images/volcan.avif" },
+    { mot: "VOITURE", image: "/images/voiture.avif" },
   ],
-
   W: [
-    { mot: "Wagon", image: "/images/wagon.avif" },
-    
-    
+    { mot: "WAGON", image: "/images/wagon.avif" },
   ],
-
   X: [
-    { mot: "Xylophone", image: "/images/xylophone.jpg" },
+    { mot: "XYLOPHONE", image: "/images/xylophone.jpg" },
   ],
-
   Y: [
-    { mot: "Yo-yo", image: "/images/yoyo.svg" },
-    { mot: "Yaourt", image: "/images/yaourt.jpg" },
-
+    { mot: "YO-YO", image: "/images/yoyo.svg" },
+    { mot: "YAOURT", image: "/images/yaourt.jpg" },
   ],
-
   Z: [
-    { mot: "Zèbre", image: "/images/zebre.avif" },
-    { mot: "Zoo", image: "/images/zoo.avif" },
-    { mot: "Zéro", image: "/images/zero.avif" },
+    { mot: "ZÈBRE", image: "/images/zebre.avif" },
+    { mot: "ZOO", image: "/images/zoo.avif" },
+    { mot: "ZÉRO", image: "/images/zero.avif" },
   ],
 };
 
